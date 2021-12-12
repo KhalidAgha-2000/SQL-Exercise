@@ -12,3 +12,27 @@
 6.UPDATE students SET Points = 550 WHERE students.name="Basma"
 
 7.UPDATE students SET Points = 150 WHERE students.name="Alex"
+###########################################
+
+### Creating Table
+
+#1- Create 
+CREATE TABLE graduates
+(
+	ID Integer NOT NULL  Primary key AUTOINCREMENT,
+	Name Text  NOT NULL  Unique,
+	Age INTEGER,
+	Gender Text,
+	Points INTEGER,
+	Graduation date
+)
+#2- copy from student to graduates
+INSERT INTO graduates (ID,Name, Age, Gender, Points)
+SELECT ID , Name , Age , Gender ,Points
+FROM students  WHERE students.Name="Layal"
+#3- Add Graduation Date 
+UPDATE graduates
+SET Graduation = '2018/09/08'
+WHERE id= 4;
+#4- delete Layal from Students
+delete from students  where name = 'Layal'
