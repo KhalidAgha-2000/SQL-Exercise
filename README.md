@@ -45,6 +45,8 @@ Inside **answers.sh** write: "select \* from students"
 
 In the **Execute SQL** tab, do the following: 1. Get all the names of students in the database 2. Get all the data of students above 30 years old 3. Get the names of the females who are 30 years old 4. Get the number of Points of **Alex** 5. Add yourself as a new student \(your name, your age...\) 6. Increase the points of **Basma** because she solved a new exercise 7. Decrease the points of **Alex** because he's late today 8. Remember to update **answers.sh** file 9. Commit \("Basic Queries"\)
 
+
+
 ### Creating Table
 
 Layal graduated on 08/09/2018. Create a table **graduates** that includes:
