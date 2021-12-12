@@ -36,3 +36,20 @@ SET Graduation = '2018/09/08'
 WHERE id= 4;
 #4- delete Layal from Students
 delete from students  where name = 'Layal'
+###########################################
+### Joins 
+#1- produce table 
+SELECT employees.Name , employees.Company , companies.Date 
+FROM employees 
+JOIN companies 
+WHERE employees.ID=companies.ID
+#2-Date before 2000
+SELECT employees.Name , companies.Date
+FROM employees 
+JOIN companies
+WHERE employees.ID=companies.ID AND companies.Date <2000
+#3- Graphuc Designer
+SELECT companies.Name  ,employees.Role 
+FROM employees 
+JOIN companies
+WHERE employees.ID=companies.ID AND employees.Role='Graphic Designer'
