@@ -98,3 +98,4 @@ In the **Execute SQL** tab, do the following:
 4. Find the names of students that contains 's'
 5. Find all students based on the decreasing order of their points
 6. commit \("Count & Filter"\)
+#Done

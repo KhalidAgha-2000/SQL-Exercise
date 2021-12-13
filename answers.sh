@@ -76,3 +76,4 @@ HAVING Points = 500;
 SELECT name FROM students WHERE name LIKE '%s%';
 #5- Desc Order
 SELECT * FROM students ORDER by Points DESC
+#Done
