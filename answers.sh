@@ -53,3 +53,26 @@ SELECT companies.Name  ,employees.Role
 FROM employees 
 JOIN companies
 WHERE employees.ID=companies.ID AND employees.Role='Graphic Designer'
+############################################
+### Count & Filter
+#1- Highest Point 
+SELECT name , Points as HighestPoint from students 
+where Points=(SELECT max(points) 
+FROM students)
+#2-AVG
+SELECT avg(Points) as 	Avarage FROM students
+#3-Have 500
+SELECT  COUNT(name) as having500P
+FROM students
+WHERE Points=500;
+#(
+#3- Have 500 point 
+SELECT COUNT(Points),name, Points
+FROM students
+GROUP BY name
+HAVING Points = 500;
+#)
+#4- names contains 's'
+SELECT name FROM students WHERE name LIKE '%s%';
+#5- Desc Order
+SELECT * FROM students ORDER by Points DESC
